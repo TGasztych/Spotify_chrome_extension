@@ -1,0 +1,57 @@
+/* Container styling for a Chrome extension popup */
+.container {
+    width: 300px;
+    padding: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+/* Style the table header */
+#trackTable th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style alternate table rows for better readability */
+  #trackTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the track name cell */
+#trackTable tbody td:nth-child(1) {
+    font-weight: bold;
+    padding: 8px;
+    width: 100px; 
+  }
+  
+  /* Style the playlist cell */
+  #trackTable tbody td:nth-child(2) {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  
+  /* Style the playlist links */
+  #trackTable tbody a {
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  /* Style the playlist links on hover */
+  #trackTable tbody a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the checkbox label */
+  #showPlaylistsLabel {
+    font-weight: bold;
+  }
+  
+  /* Style the checkbox */
+  #showPlaylists {
+    margin-right: 5px;
+  }
+  

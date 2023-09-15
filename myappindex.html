@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link href="popup.css" rel="stylesheet" type="text/css" />
+<script type="module" src="updateData.js"></script>
+<script type="module" src="popup.js"></script>
+<script type="module" src="updateTime.js"></script>
+
+
+
+<div class="container">
+  <div>
+
+    <div class="title">spotify chrome extension</div>
+    <div class="updateButton" id="updateButton"><button>UPDATE</button></div>
+    <!-- Add a new div to display the time difference -->
+    <div id="timeDisplay"></div>
+    <button id="analyzeButton">Analyze Page</button>
+
+    
+    <!-- Add a checkbox to toggle showing non-empty playlists -->
+    <label for="showPlaylists">Show Only Tracks with Playlists:</label>
+    <input type="checkbox" id="showPlaylists">
+
+    <table id="trackTable">
+        <thead>
+            <tr>
+                <th>Track Name</th>
+                <th>Playlists</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here using JavaScript -->
+        </tbody>
+    </table>
+
+    
+    
+
+    
+    
+  </div>
+</div>

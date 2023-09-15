@@ -1,0 +1,28 @@
+{
+    "name": "playlists info for songs",
+    "version": "1.1.0",
+    "description": "Shows every user playlist that contains a song in it",
+    "manifest_version": 3,
+    "author": "Tomasz Gasztych",
+    "host_permissions": [
+        "https://example.com/answer",
+        "https://open.spotify.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://open.spotify.com/*"],
+            "js": ["updateData.js"]
+          },
+          {
+            "matches": ["https://open.spotify.com/*", "https://example.com/answer"],
+            "js": ["popup.js"]
+          }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage"],
+    "action":{
+        "default_popup": "myappindex.html",
+        "default_title": "playlists info for songs"
+    }
+}
